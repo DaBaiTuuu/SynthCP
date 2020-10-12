@@ -10,3 +10,6 @@ python tools/eval_fcn_single.py --name cityscapes --dataset_mode cityscapes \
                 --vgg_norm \
                 --gpu_ids $GPUs \
                 --eval_output_dir $eval_output_dir \
+
+
+# python tools/eval_fcn_single.py --name cityscapes --dataset_mode cityscapes --phase test --cross_validation_mode train --n_fold 0 --fold 0 --label_nc 19 --no_instance --serial_batches --no_flip --dataroot ./datasets/cityscapes --model_path checkpoints/fcn8s/cityscapes_c19-iter100000.pth --vgg_norm --gpu_ids 0 --eval_output_dir exps/fcn_exp --nThreads 1
